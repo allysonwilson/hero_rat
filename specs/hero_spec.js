@@ -27,18 +27,23 @@ describe("Hero", function() {
     assert.strictEqual(wonderWoman.sayName(), "My name is Diana Prince!");
   });
 
-  it("should be able add task", function(){
-  wonderWoman.addTask(flyAirplane);
-  assert.strictEqual(wonderWoman.toDo.length, 1);
+  it("should be able add task", function() {
+    wonderWoman.addTask(flyAirplane);
+    assert.strictEqual(wonderWoman.toDo.length, 1);
   });
 
-it("should be able remove task", function() {
-  wonderWoman.addTask(flyAirplane);
-  wonderWoman.addTask(flyAirplane);
-  wonderWoman.addTask(eatCheeseBurger);
-  wonderWoman.removeTask(0, 1);
-  assert.strictEqual(wonderWoman.toDo.length, 2);
-});
-// is this the right way to test this method, or should I be checking
-// array for current contents?
+  it("should be able remove task", function() {
+    wonderWoman.addTask(flyAirplane);
+    wonderWoman.addTask(flyAirplane);
+    wonderWoman.addTask(eatCheeseBurger);
+    wonderWoman.removeTask(0, 1);
+    assert.strictEqual(wonderWoman.toDo.length, 2);
+  });
+
+  // it("should be able to eat to increase healthValue", function() {
+  //
+  //   assert.strictEqual(wonderWoman.eat(),)
+  // });
+  // is this the right way to test this method, or should I be checking
+  // array for current contents?
 });

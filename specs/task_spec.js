@@ -23,9 +23,9 @@ describe( "Task", function(){
     assert.strictEqual(flyAirplane.reward, 100);
   });
 
-  it("should be able to be marked complete", function(){
-    // wonderWoman.flyAirplane.complete()
-    // assert.strictEqual(flyAirplane.complete(), true);
-  });
+  // it("should be able to be marked complete", function(){
+  //   wonderWoman.flyAirplane.complete()
+  //   assert.strictEqual(flyAirplane.complete(), true);
+  // });
 
 }) ;
